@@ -7,27 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/styles.css')}}">
 </head>
 <body>
-	<div class="admin-panel-div">		
+	<div class="fac-panel-div">		
 		<div class="left-panel">
 			<img src="{{url_for('static', filename='images.jpg')}}" align="middle" />
-						<form method="POST" action="/logout">
+			<form method="POST" action="/logout">
 				<button type="submit" class="logout-btn">LOGOUT</button>
 			</form>
 		</div>
 		<div class="right-panel">
-			<div class="reg-form-div">
-		<h2 class="login-page-title">ACCOUNT<br> CREATION</h2>
-<!-- 		<h4>Academic Tracker</h4> -->
-		<div class="inner-form-div">
-			<h3 class="login-font">SIGN-UP</h3>
-			<form method="POST" action="/register">
-				<input type="text" name="username" class="username-input login-input" placeholder="Username" autocomplete="off">
-				<input type="password" name="password" class="password-input login-input" placeholder="Password">
-				<input type="text" name="role" placeholder="Role" class="login-input role-input">
-				<button type="submit" class="reg-btn">REGISTER</button>
-			</form>
-		</div>
-	</div>
+			
 		</div>
 	</div>
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

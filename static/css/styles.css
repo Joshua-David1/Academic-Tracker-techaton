@@ -1,3 +1,12 @@
+img{
+	position: absolute;
+	left: 12%;
+	box-shadow: 0px 5px 15px 5px #176DFF;
+	transform: translate(-50%,-50%);
+	width: 80px;
+	border-radius: 75px;
+}
+
 .login-page-title{
 	color: white;
 	font-weight: 800;
@@ -50,6 +59,19 @@
 	box-shadow: 5px 5px 15px 8px #C3D8F5;
 }
 
+.reg-form-div{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	height: 550px;
+	background-color: #176DFF;
+	border-radius: 25px;
+	box-shadow: 5px 5px 15px 8px #C3D8F5;
+}
+
+
 .inner-form-div{
 	border-radius: 25px;
 	position: absolute;
@@ -73,6 +95,13 @@
 .username-input{
 	position: absolute;
 	top: 35%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.role-input{
+	position: absolute;
+	top: 65%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
@@ -106,6 +135,78 @@
 	transition: 0.5s;
 }
 
+.reg-btn{
+	cursor: pointer;
+	top: 82%;
+	left: 50%;
+	font-size: 18px;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	font-weight: 500;
+	color: white;
+	width: 120px;
+	padding: 10px;
+	border-radius: 25px;
+	border: none;
+	background-color: #1A6EFC;	
+	transition: 0.5s;
+}
+
+.reg-btn:hover{
+	opacity: 0.6;
+	transition: 0.5s;
+}
+
 input:focus{
 	outline: none;
 }
+
+.admin-panel-div,.fac-panel-div,.stud-panel-div{
+	display: flex;
+	animation-name: slide;
+	animation-duration: 2s;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width:90%;
+	height: 600px;
+	background-color: white;
+	border-radius: 25px;
+	box-shadow: 5px 5px 15px 8px #C3D8F5;
+}
+
+.left-panel{
+	border-radius: 15px 0 0 15px;
+	width: 25%;
+	background-color: #176DFF;
+}
+
+.right-panel{
+	border-radius: 0 15px 15px 0;
+	width: 75%;
+	background-color: white;
+}
+
+.logout-btn{
+	cursor: pointer;
+	top: 82%;
+	left: 12%;
+	font-size: 18px;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	font-weight: 500;
+	width: 120px;
+	padding: 10px;
+	border-radius: 25px;
+	border: none;
+	color: #1A6EFC;
+	background-color: white;	
+	transition: 0.5s;
+}
+
+.logout-btn:hover{
+	opacity: 0.6;
+	transition: 0.5s;
+}
+
